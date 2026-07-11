@@ -21,6 +21,7 @@ PHP 8.x | MySQL | PDO | HTML5 | CSS3
 - 100% prepared statements (SQL injection proof)
 - Password hashing with bcrypt
 - Session-based authentication
+-  rate limiting isn't implemented at the app layer here — for a real deployment this belongs at the reverse-proxy level (e.g. Nginx `limit_req`) so it protects the login endpoint even before PHP runs
 
 ## 🎯 Demo Credentials
 
